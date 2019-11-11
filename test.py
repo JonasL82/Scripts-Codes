@@ -32,6 +32,9 @@ class Car():
         for eq in self.equipment:
             print("* " + eq)
 
+    def get_price(self):
+        return self.price
+
     def __add__(self, other):
         return self.price + other.get_price()
 
@@ -47,7 +50,7 @@ volvo = Car("Volvo", 200000)
 #volvo.add_equipment("7 inch display")
 
 #volvo.print_equipment()
-        print(bmw + volvo)
+print(bmw + volvo)
 #print(bmw.reduce_price())
 #print(bmw)
 #print(volvo)
